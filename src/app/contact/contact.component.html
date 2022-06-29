@@ -1,0 +1,29 @@
+
+<!-- Hello
+
+<div>
+  <label for="name">Name: </label>
+  <input type="text" class="name" [(ngModel)]="contactName">
+
+  <label for="name">Name: </label>
+  <input type="text" class="email" [(ngModel)]="email">
+  <input type="text" class="message" [(ngModel)]="message">
+
+</div> -->
+<div class="container">
+
+  <div class="mb-3">
+    <label for="name" class="form-label">Name:</label>
+    <input [(ngModel)]="contactName" type="text" class="form-control" id="name" aria-describedby="name">
+
+  </div>
+  <div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input [(ngModel)]="email" type="email" class="form-control" id="email">
+  </div>
+  <div class="mb-3">
+    <label for="message" class="form-label">Example textarea</label>
+    <textarea [(ngModel)]="message" class="form-control" id="message" rows="3"></textarea>
+  </div>
+  <button type="button" (click)="submit()" class="btn btn-primary">Submit</button>
+</div>

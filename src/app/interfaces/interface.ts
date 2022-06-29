@@ -1,0 +1,25 @@
+export interface Project{
+  data:[
+    {
+      id:number;
+      attributes:{
+        projecttitle:string,
+        projectdescription:string,
+        projecturl:string,
+        projectcover:{
+          data:{
+            id:number,
+            attributes:{
+              alternativeText:string;
+              formats:{
+                thumbnail:{
+                  url:string;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}

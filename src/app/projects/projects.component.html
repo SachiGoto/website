@@ -1,0 +1,12 @@
+<div class="container">
+<div class="row mb-3" *ngFor="let project of project">
+  <div class="col-md-4 pCover" [ngStyle]="{'background-image' : 'url(' + host + project.attributes.projectcover.data.attributes.formats.thumbnail.url + ')'}">
+    <!-- <div class="" ></div> -->
+  </div>
+  <div class="col-md-8">
+    <h3>{{project.attributes.projecttitle}}</h3>
+    <p [innerHTML]="project.attributes.projectdescription"></p>
+    <p><a [href]="project.attributes.projecturl" target="_blank" >View Project</a></p>
+  </div>
+</div>
+  </div>
